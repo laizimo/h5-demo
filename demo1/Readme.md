@@ -19,7 +19,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
   
   //swiper.animate.min.js需要下载并未有cdn
-  ```
+ ```
 2. jquery
 3. 后台使用了mock数据: [mock数据](http://www.lhbzimo.cn:5000)
 
