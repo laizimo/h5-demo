@@ -1,0 +1,228 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+ body{
+    height: 100vh;
+    position: relative;
+}
+
+audio{
+    width: 0;
+    height: 0;
+    position: absolute;
+
+}
+
+#musicBtn{
+    position: fixed;
+    width: .93rem;
+    height: .73rem; 
+    top: 2%;
+    right: 3%;
+    z-index: 99;
+}
+
+
+
+/* first part */
+.first-part{
+    width: 100%;
+    height: 100%;
+    background-image: url('../imgs/index.png');
+    background-size: 100% 100%;
+}
+
+/* button group */
+.first-part .btn_group{
+    width: 100%;
+    list-style: none;
+    position: absolute;
+    height: auto;
+    bottom: 16%;
+}
+
+.first-part .btn_group .btn{
+    float: left;
+    width: 40%;
+    position: relative;
+    margin: 5%;
+}
+
+.first-part .btn_group .btn img{
+    width: 100%;
+}
+
+.first-part .gamerule-part{
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.gamerule-part .rule{
+    width: 6.56rem;
+    height: 7.29rem;
+    margin: 1rem auto 0;
+    display: block;
+}
+
+.gamerule-part .btn{
+    width: 40%;
+    position: relative;
+    margin: 20px auto 0;
+}
+
+.gamerule-part .btn img{
+    width: 100%;
+}
+
+/* game part */
+
+.game-part {
+    height: 100vh;
+    background-image: url(../imgs/background.png);
+    background-size: 100% 100%;
+    display: none;
+    position: relative;
+}
+
+.second-part{
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+
+.second-part .game-loading{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+}
+
+.second-part .game-loading img{
+    width: 3.24rem;
+    height: 3.24rem;
+    position: relative;
+    display: block;
+    top: 50%;
+    margin: -1.62rem auto 0;
+}
+
+.second-part header {
+    width: 100%;
+    height: 25%;
+    position: relative;
+}
+
+.second-part header .source-image {
+    height: 50%;
+    float: left;
+    margin-top: 10%;
+    margin-left: 8%;
+    border: 1px solid #ca4174;
+    box-shadow: 0 0 10px black;
+}
+
+.second-part header .user-date {
+    height:  100%;
+    float: right;
+    width: 50%;
+    position: relative;
+}
+
+.second-part header .user-date .guanqia {
+    height: 2.64rem;
+    position: relative;
+    margin-top: 10%;
+    margin-right: 5%;
+    float: right;
+}
+
+.second-part header .user-date .time{
+    font-size: 22px;
+    color: #ca4174;
+    position: absolute;
+    top: 0.9rem;
+    left: 1.2rem;
+    letter-spacing: 5px;
+    text-shadow: 0 0 15px black;
+}
+
+.second-part canvas {
+    width: 6.5rem;
+    height: 6.5rem;
+    border: 2px solid #ca4174;
+    display: block;
+    margin: 0.5rem auto 0;
+    box-shadow: 0 0 10px black;
+}
+
+.game-over{
+    padding-top: 1px;
+    display: none;
+    height: 100%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.game-over .lose{
+    width: 6.48rem;
+    height: 5.58rem;
+    display: block;
+    margin: 2rem auto 0;
+}
+
+.game-over ul{
+    list-style: none;
+    width: 100%;
+    margin: .2rem auto;
+}
+
+.game-over ul li{
+    width: 50%;
+    height: auto;
+    float: left;
+    text-align: center;
+}
+
+.game-over ul li img{
+    width: 2.96rem;
+    height: 0.94rem;
+}
+
+.game-over #share {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.game-success{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding-top: 1px;
+    text-align: center;
+}
+
+.game-success .win{
+    width: 6.48rem;
+    height: 5.58rem;
+    margin-top: 1rem;
+}
+
+.game-success #open{
+    width: 2.97rem;
+    height: 0.94rem;
+    margin-top: .2rem;
+}

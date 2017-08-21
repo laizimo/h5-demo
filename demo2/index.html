@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 50px;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>html5 拼图游戏</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="js/loading.js"></script>
+</head>
+<body>
+    <!-- music -->
+    <audio src="a.mp3" autoplay loop id="music"></audio>
+    <img src="./imgs/4-1.png" alt="music" id="musicBtn">
+
+    <!-- first part -->
+    <div class="first-part">
+
+        <!-- button group -->
+        <ul class="btn_group">
+            <li class="btn" id="startgame"><img src="./imgs/startgame.png" alt="startgame"></li>
+            <li class="btn" id="gamerule"><img src="./imgs/gamerule.png" alt="gamerule"></li>
+        </ul>
+
+        <div class="gamerule-part">
+            <img src="./imgs/youxishuoming1.png" alt="rule" class="rule">
+            <div class="btn" id="understand"><img src="./imgs/zhidaole.png" alt="understand"></div>
+        </div>
+
+    </div>
+
+    <!-- pingtu game part -->
+
+    <div class="game-part">
+
+        <div class="second-part">
+            <!-- loading -->
+            <div class="game-loading">
+                <img src="./imgs/num3.png" alt="second" class="loading-second">
+            </div>
+
+            <!-- game -->
+
+            <header class="source-part">
+                <img src="" alt="source" class="source-image">
+                <div class="user-date">
+                    <img src="./imgs/lv1.png" alt="guanqia" class="guanqia">
+                    <span class="time">00:60</span>
+                </div>
+            </header>
+
+            <canvas id="canvas" width="600px" height="600px">请选择更高版本的浏览器</canvas>
+        </div>
+
+        <div class="game-over">
+            <img src="./imgs/gamelose.png" alt="lose" class="lose">
+            <ul class="btn_group">
+                <li>
+                    <img src="./imgs/restart.png" alt="restart" id="restart">
+                </li>
+                <li>
+                    <img src="./imgs/invite.png" alt="invite" id="invite">
+                </li>
+            </ul>
+            <img src="./imgs/share.png" alt="share" id="share">
+        </div>
+
+        <div class="game-success">
+            <img src="./imgs/winnbg.png" alt="winnbg" class="win">
+            <img src="./imgs/openbox.png" alt="openbox" id="open">
+        </div>
+    </div>
+
+    <script src="./js/rem.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
