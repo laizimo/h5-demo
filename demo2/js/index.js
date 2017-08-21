@@ -163,7 +163,7 @@ function moveBlock(event) {
         select.x = -1;
         select.y = -1;
         if(judge(pointArr)) {
-            if(level >= 1){
+            if(level >= 3){
                 cvs.removeEventListener('touchend', moveBlock, false);
                 success();
             }
