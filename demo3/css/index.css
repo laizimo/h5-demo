@@ -95,12 +95,71 @@ nav .nav-item:last-child{
     margin-left: .16rem;
 }
 
+#wrapper{
+    position: absolute;
+    top: 4rem;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+#pull-refresh{
+    position: absolute;
+    top: -1rem;
+    width: 100%;
+    z-index: -1;
+    text-align: center;
+    color: grey;
+}
+
+#pull-refresh .arrow{
+    margin-top: .05rem;
+    margin-bottom: .06rem;
+}
+
+#pull-refresh .arrow::after{
+    content: '下拉刷新'
+}
+
+#pull-refresh .arrow.arrow_up::after{
+    content: '松开更新'
+}
+
+.arrow_up img{
+    transform: rotateZ(180deg);
+    -webkit-transform: rotateZ(180deg);
+}
+
+.pull-refresh img{
+    transition: transform .4s ease;
+    width: 20px;
+}
+
+#toploading{
+    display: none;
+    width: 100px;
+    height: 2rem;
+    margin: 0 auto;
+}
+
+#toploading img{
+    width: 2rem;
+    height: 2rem;
+}
+
 .wrapper{
+    overflow: scroll;
     width: 100%;
     position: relative;
     list-style: none;
     padding: 0;
     padding-top: .12rem;
+}
+
+.wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .wrapper .list-wrapper{
@@ -169,4 +228,33 @@ nav .nav-item:last-child{
 .wrapper .btn-group .vote{
     background: rgb(0, 160, 220);
     color: #fff;
+}
+
+.loading{
+    width: 100px;
+    height: 2rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.loading img{
+    width: 2rem;
+}
+
+.bottom{
+    display: none;
+    text-align: center;
+    width: 4rem;
+    height: .2rem;
+    color: gray;
+    font-size: 10px;
+    margin: -0.1rem auto;
+}
+
+.bottom .line{
+    vertical-align: middle;
+    display: inline-block;
+    width: 30%;
+    height: 1px;
+    background: gray;
 }
