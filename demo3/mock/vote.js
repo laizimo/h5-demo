@@ -23,4 +23,24 @@ app.get('/:id', function(req, res){
     });
 });
 
-app.listen(3000);
+app.get('/update/:id', function(req, res){
+    const page = req.params.id;
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    fs.readFile(path.resolve(__dirname, 'update.json'), function(err, data){
+        if(err){
+            throw err;
+        }
+        const static = JSON.parse(data).data;
+        const arr = Array.from(static);
+        const next = page - 0 + 1 <= arr.length ? true : false;
+        let result = [];
+        for(let value of arr){
+            if(value.page <= page){
+                result = result.concat(value.data);
+            }
+        }
+        res.json({data: result, next: next});
+    });
+});
+
+app.listen(3001);
