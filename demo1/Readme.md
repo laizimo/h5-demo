@@ -27,6 +27,10 @@ demo演示地址：
 
 **[demo地址](http://www.lhbzimo.cn/operation-report/src/index.html)**
 
+二维码：
+
+![image](http://lhbzimo.oss-cn-shenzhen.aliyuncs.com/demo1.png)
+
 效果图：
 
 ![界面](http://oifsv5iji.bkt.clouddn.com/716DD6C6-C116-4228-B93E-CE6C3F07F824.png)
