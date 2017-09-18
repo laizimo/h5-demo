@@ -122,7 +122,7 @@ import Promise from 'es6-promise';
                 console.log(err);
             }).catch(e => console.log(e));
         },
-        templ: function(data){
+        templ: function(data){      //div template
             const block = doc.createElement('div');
             block.className = 'list-item';
             const value = `
@@ -149,7 +149,7 @@ import Promise from 'es6-promise';
                 $(item).append(fragments[index]);
             });
         },
-        initHtml: function(data){
+        initHtml: function(data){     //initial html template
             const _self = this;
             const fragment = doc.createDocumentFragment();
             const fragments = _self.setFragements(data);
@@ -161,7 +161,7 @@ import Promise from 'es6-promise';
             });
             $('.wrapper').html(fragment);
         },
-        setFragements: function(data){
+        setFragements: function(data){      //generate some fragement
             const _self = this;
             const count = _self.config['list_number'];
             const fragments = _self.getFragments(count);
@@ -260,68 +260,6 @@ import Promise from 'es6-promise';
             const bottom = document.getElementById('bottom');
             bottom.style.display = 'block';
         }
-        // bounduce: function(fn, timeout){
-        //     const _self = this;
-        //     let prev_time = null;
-        //     let timer;
-        //     return function(){
-        //         let newDate = +(new Date());
-
-        //         if(!prev_time){
-        //             prev_time = newDate;
-        //         }
-
-        //         if(newDate - prev_time > timeout){
-        //             clearTimeout(timer);
-        //             fn.apply(_self);
-        //             prev_time = newDate;
-        //         }else{
-        //             clearTimeout(timer);
-        //             timer = setTimeout(() => {
-        //                 fn.apply(_self);
-        //             }, 300);
-        //         }
-        //     }
-        // },
-        // judgeToBottom: function(){
-        //     // const scrollToTop = win.pageYOffset;
-            
-        //     // const scrollOffset = doc.documentElement.scrollHeight;
-        //     // const viewTop = doc.documentElement.clientHeight || doc.body.clientHeight;
-        //     // if(scrollToTop + viewTop == scrollOffset){
-        //     const innerHeight = win.innerHeight;
-        //     const offsetHeight = doc.body.offsetHeight;
-        //     console.log(innerHeight, offsetHeight);
-        //     if(window.scrollY + window.innerHeight + 200 > document.body.offsetHeight){
-        //         return true;
-        //     }else{
-        //         return false;
-        //     }
-        // },
-        // judgeToTop: function(){
-        //     if(win.pageYOffset == 0){
-        //         return true;
-        //     }else{
-        //         return false;
-        //     }
-        // },
-        // toploading: function(){
-        //     const _self = this;
-        //     let toploading = null;
-        //     if(!toploading){
-        //         toploading = $('#top-loading');
-        //     }
-            
-        //     function show(){
-        //         toploading.css('display', 'block');
-        //     }
-
-        //     function hide(){
-        //         toploading.css('display', 'none');
-        //     }
-
-        //     return {show, hide};
-        // }
     };
 
     index.init();
