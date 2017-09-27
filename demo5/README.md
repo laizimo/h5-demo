@@ -28,4 +28,4 @@
 
 ![pc端](http://lhbzimo.oss-cn-shenzhen.aliyuncs.com/pc-demo5.png)
 
-![mobile端](http://lhbzimo.oss-cn-shenzhen.aliyuncs.com/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E7%A8%BF%E4%BB%B6%E5%8A%A0%E8%BD%BD%E5%A4%B1%E8%B4%A5@3x.jpg)
+<img src="http://lhbzimo.oss-cn-shenzhen.aliyuncs.com/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E7%A8%BF%E4%BB%B6%E5%8A%A0%E8%BD%BD%E5%A4%B1%E8%B4%A5@3x.jpg" width="320px" height="860px" />
